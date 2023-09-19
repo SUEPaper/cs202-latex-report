@@ -110,13 +110,41 @@
     default = {实习报告},
     name = sub@title,
   },
-  student = {
-    default = {张三}
+  studentA = {
+    default = {李四}
   },
-  student-id = {
+  studentA-id = {
     default = {2022****},
-    name    = student@id,
+    name    = studentA@id,
   },
+  studentB = {
+    default = {李四}
+  },
+  studentB-id = {
+    default = {2022****},
+    name    = studentB@id,
+  },
+  studentC = {
+    default = {李四}
+  },
+  studentC-id = {
+    default = {2022****},
+    name    = studentC@id,
+  },
+  studentD = {
+    default = {李四}
+  },
+  studentD-id = {
+    default = {2022****},
+    name    = studentD@id,
+  },
+  % student = {
+  %   default = {张三}
+  % },
+  % student-id = {
+  %   default = {2022****},
+  %   name    = student@id,
+  % },
   institution = {
     default = {数理学院数学系},
   },
@@ -225,9 +253,9 @@
 
 % 页眉
 \pagestyle{fancy}
-\lhead{课程名称：数据库应用训练}
-\chead{姓名：\math@student}
-\rhead{学号：\math@student@id}
+\lhead{}
+\chead{课程名称：数据库应用训练}
+\rhead{}
 \setlength{\headheight}{13pt}
 
 
@@ -238,11 +266,11 @@
     \bfseries\zihao{-0}{\math@title}\\
     \vskip 30pt
     \bfseries\songti\zihao{1}{\math@sub@title} \\
-    \vskip 60pt
+    \vskip 40pt
     \begin{center}
       \includegraphics[width=0.4\linewidth]{shiep-logo}
     \end{center}
-	\vskip 60pt
+	\vskip 40pt
     \begin{center}
 		\begin{large}
 			\zihao{-3}
@@ -251,9 +279,13 @@
 						\cline{2-2}\\
 				专业年级：& \math@discipline\\
 				\cline{2-2}\\
-				姓\qquad 名：& \math@student\\
+				小组成员：& \math@studentA@id \qquad \math@studentA \\
 				\cline{2-2}\\
-				学\qquad 号：&\hspace{2.5cm} \math@student@id \hspace{2.5cm} \\
+				& \math@studentB@id \qquad \math@studentB \\
+				\cline{2-2}\\
+        & \math@studentC@id \qquad \math@studentC \\
+				\cline{2-2}\\
+        & \math@studentD@id \qquad \math@studentD \\
 				\cline{2-2}
 			\end{tabular}
 		\end{large}
